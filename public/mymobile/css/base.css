@@ -1,0 +1,17 @@
+.my-header {
+  background-color: #006699;
+}
+.my-header .mui-icon,
+.my-header .mui-title {
+  color: #fff;
+}
+.my-nav {
+  background-color: #006699;
+}
+.my-nav .mui-tab-item {
+  color: #fff;
+}
+.my-nav .mui-tab-item.mui-active {
+  color: orangered;
+}
+/*# sourceMappingURL=base.css.map */
