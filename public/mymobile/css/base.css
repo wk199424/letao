@@ -49,4 +49,55 @@
 .my-brand .my-brand-b a img {
   width: 100%;
 }
+.live {
+  overflow: hidden;
+  padding: 10px;
+}
+.live .my-live-a a {
+  width: 100%;
+  display: block;
+}
+.live .my-live-a a img {
+  width: 100%;
+}
+.live .my-live-b {
+  text-align: center;
+}
+.live .my-live-b a {
+  overflow: hidden;
+  padding: 3px  3px;
+  width: 50%;
+  float: left;
+  display: block;
+  box-shadow: 0 0 5px #ccc;
+}
+.live .my-live-b a img {
+  width: 100%;
+  padding: 3px 3px;
+}
+.live .my-live-b a p {
+  line-height: 18px;
+  font-size: 14px;
+  color: #8f8f94;
+  overflow: hidden;
+  padding: 5px;
+  height: 44px;
+  margin-bottom: 0;
+}
+.live .my-live-b a span {
+  font-size: 12px;
+  text-align: center;
+  color: #8f8f94;
+}
+.live .my-live-b a span:nth-of-type(1) {
+  color: #ff3300;
+  margin-right: 3px;
+}
+.live .my-live-b a span:nth-of-type(2) {
+  text-decoration: line-through;
+}
+.live .my-live-b a .buy-now {
+  background-color: #006699;
+  color: #fff;
+}
 /*# sourceMappingURL=base.css.map */
