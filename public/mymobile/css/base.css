@@ -1,9 +1,13 @@
 .my-header {
   background-color: #006699;
+  border-bottom: 1px solid #ccc;
 }
 .my-header .mui-icon,
 .my-header .mui-title {
   color: #fff;
+}
+.banner {
+  margin-top: 45px;
 }
 .my-nav {
   background-color: #006699;
@@ -13,5 +17,17 @@
 }
 .my-nav .mui-tab-item.mui-active {
   color: orangered;
+}
+.my-classify {
+  overflow: hidden;
+  padding: 10px;
+}
+.my-classify a {
+  width: 33.33%;
+  display: block;
+  float: left;
+}
+.my-classify a img {
+  width: 100%;
 }
 /*# sourceMappingURL=base.css.map */
