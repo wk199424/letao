@@ -6,9 +6,6 @@
 .my-header .mui-title {
   color: #fff;
 }
-.banner {
-  margin-top: 45px;
-}
 .my-nav {
   background-color: #006699;
 }
@@ -17,6 +14,9 @@
 }
 .my-nav .mui-tab-item.mui-active {
   color: orangered;
+}
+.banner {
+  margin-top: 45px;
 }
 .my-classify {
   overflow: hidden;
@@ -28,6 +28,25 @@
   float: left;
 }
 .my-classify a img {
+  width: 100%;
+}
+.my-brand {
+  overflow: hidden;
+  padding: 10px;
+}
+.my-brand .my-brand-a a {
+  width: 100%;
+  display: block;
+}
+.my-brand .my-brand-a a img {
+  width: 100%;
+}
+.my-brand .my-brand-b a {
+  width: 25%;
+  display: block;
+  float: left;
+}
+.my-brand .my-brand-b a img {
   width: 100%;
 }
 /*# sourceMappingURL=base.css.map */

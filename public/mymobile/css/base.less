@@ -9,15 +9,10 @@
   }
 }
 
-//轮播图
-.banner{
- margin-top: 45px;
-}
-
-
 //底部
 .my-nav{
   background-color: #006699;
+  //overflow: hidden;
   .mui-tab-item{
     color: #fff;
     &.mui-active{
@@ -25,6 +20,13 @@
     }
   }
 }
+
+//轮播图
+.banner{
+  margin-top: 45px;
+}
+
+
 
 //分类块
 .my-classify{
@@ -42,5 +44,26 @@
 
 //品牌专区
 .my-brand{
-
+  overflow: hidden;
+  padding: 10px;
+  .my-brand-a {
+    a {
+      width: 100%;
+      display: block;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .my-brand-b{
+    a{
+      width: 25%;
+      display: block;
+      float: left;
+      img{
+        width: 100%;
+      }
+    }
+  }
 }
+
