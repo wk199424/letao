@@ -62,4 +62,9 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+.my-brands .cont-lists .mui-scroll .empty {
+  text-align: center;
+  font-size: 18px;
+  color: #f20;
+}
 /*# sourceMappingURL=category.css.map */
