@@ -27,7 +27,7 @@ body {
   line-height: 50px;
   font-size: 16px;
   color: #000;
-  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   border-right: 1px solid #ccc;
 }
 .my-brands .cate-list .active {
@@ -48,8 +48,8 @@ body {
   background-color: #fff;
 }
 .my-brands .cont-lists .mui-scroll ul li {
-  float: left;
   width: 33.33%;
+  float: left;
 }
 .my-brands .cont-lists .mui-scroll ul li a {
   text-align: center;

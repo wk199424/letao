@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./css/category.css">
     <script src="./assets/zepto/zepto.min.js"></script>
     <script src="./assets/mui/js/mui.min.js"></script>
+    <script src="./assets/artTemplate/template-native.js"></script>
+    <script src="./js/category.js"></script>
     <script src="js/common.js"></script>
 </head>
 <body>
@@ -24,6 +26,7 @@
         <span class="mui-icon mui-icon-home"></span>
         <span class="mui-tab-label">首页</span>
     </a>
+
     <a class="mui-tab-item" href="category.html">
         <span class="mui-icon mui-icon-bars"></span>
         <span class="mui-tab-label">分类</span>
@@ -38,68 +41,41 @@
     </a>
 </nav>
 
-<!--左侧-->
+
 <div class="my-brands">
+    <!--左侧-->
     <div class="cate-list">
         <div class="mui-scroll-wrapper">
-            <div class="mui-scroll">
-                <a href="javascript:;" class="active">运动馆</a>
-                <a href="javascript:;">女士馆</a>
-                <a href="javascript:;">男士馆</a>
-                <a href="javascript:;">帆布馆</a>
-                <a href="javascript:;">户外馆</a>
-                <a href="javascript:;">户外馆</a>
-                <a href="javascript:;">户外馆</a>
-                <a href="javascript:;">户外馆</a>
-                <a href="javascript:;">馆</a><a href="javascript:;">馆</a><a href="javascript:;">馆</a><a href="javascript:;">馆</a><a href="javascript:;">馆</a><a href="javascript:;">馆</a><a href="javascript:;">馆</a><a href="javascript:;">馆</a><a href="javascript:;">馆</a><a href="javascript:;">馆</a><a href="javascript:;">馆</a><a href="javascript:;">馆</a><a href="javascript:;">馆</a><a href="javascript:;">馆</a><a <a href="javascript:;">馆</a>href="javascript:;">馆</a><a href="javascript:;">馆</a><a href="javascript:;">馆</a><a href="javascript:;">馆</a><a href="javascript:;">馆</a><a href="javascript:;">馆</a><a href="javascript:;">馆</a><a href="javascript:;">馆</a><a href="javascript:;">馆</a>
+            <div class="mui-scroll" id="links">
             </div>
         </div>
     </div>
+    <!--右侧-->
     <div class="cont-lists">
         <div class="mui-scroll-wrapper">
             <div class="mui-scroll">
-                <ul class="mui-clearfix ">
-                    <li>
-                    <a href="javascript:;" >
-                        <img src="./images/brand1.png" alt="">
-                        <span>耐克</span>
-                    </a>
-                </li>
-                    <li>
-                        <a href="javascript:;">
-                            <img src="./images/brand2.png" alt="">
-                            <span>耐克</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <img src="./images/brand3.png" alt="">
-                            <span>耐克</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <img src="./images/brand4.png" alt="">
-                            <span>耐克</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <img src="./images/brand5.png" alt="">
-                            <span>耐克</span>
-                        </a>
-                    </li>
-                </ul>
+                <ul class="mui-clearfix" id="cont-right">
 
+                </ul>
             </div>
         </div>
     </div>
 </div>
 </body>
-<script>
-    mui('.mui-scroll-wrapper').scroll({
-        deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
-    });
+<script id="category-first" type="text/html">
+    <% for(var i = 0; i < result.length;i++){ %>
+    <a href="javascript:;"
+    data-id="<%=result[i].id %>"><%=result[i].categoryName%></a>
+    <% } %>
 </script>
-
+<script id="category-second" type="text/html">
+    <% for(var i = 0; i < rows.length;i++){ %>
+    <li>
+        <a href="javascript:;" >
+            <img src="<%=rows[i].brandLogo%>" alt="">
+            <span><%=rows[i].brandName%></span>
+        </a>
+    </li>
+    <% } %>
+</script>
 </html>
