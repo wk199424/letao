@@ -1,0 +1,44 @@
+.my-search {
+  padding-top: 20px;
+  margin: 10px;
+}
+.my-search .my-search-btn {
+  border: 1px solid #006699;
+  position: relative;
+  height: 40px;
+}
+.my-search .my-search-btn input[type=text] {
+  height: 37px;
+  border: none;
+}
+.my-search .my-search-btn input[type=button] {
+  width: 60px;
+  height: 38px;
+  border-radius: 0;
+  border: 0;
+  position: absolute;
+  background-color: #006699;
+  top: 0;
+  right: 0;
+}
+.my-search .my-search-history {
+  padding: 10px;
+  height: 50px;
+}
+.my-search .my-search-history a {
+  display: inline-block;
+  color: #8c8c8c;
+  line-height: 40px;
+}
+.my-search .my-search-history .my-delete {
+  font-size: 17px;
+  float: right;
+}
+.my-search .my-view .my-list {
+  background-color: #EFEFF4;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  border-bottom: 1px solid #ccc;
+}
+/*# sourceMappingURL=search.css.map */

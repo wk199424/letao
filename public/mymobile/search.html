@@ -2,9 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>乐淘</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="assets/mui/css/mui.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./assets/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/search.css">
+
 </head>
 <body>
-$END$
+<!--顶部-->
+<header class="mui-bar mui-bar-nav my-header">
+    <a class="mui-icon mui-icon-arrowleft" ></a>
+    <h1 class="mui-title">搜索中心</h1>
+</header>
+<nav class="mui-bar mui-bar-tab footer my-nav">
+    <a class="mui-tab-item " href="index.html">
+        <span class="mui-icon mui-icon-home"></span>
+        <span class="mui-tab-label">首页</span>
+    </a>
+    <a class="mui-tab-item" href="category.html">
+        <span class="mui-icon mui-icon-bars"></span>
+        <span class="mui-tab-label">分类</span>
+    </a>
+    <a class="mui-tab-item" href="cart.html">
+        <span class="mui-icon iconfont icon-gouwuche fa fa-shopping-cart"></span>
+        <span class="mui-tab-label ">购物车</span>
+    </a>
+    <a class="mui-tab-item" href="user.html">
+        <span class="mui-icon mui-icon-person"></span>
+        <span class="mui-tab-label">会员中心</span>
+    </a>
+</nav>
+
+<!--搜索框-->
+<div class="my-search">
+    <div class="my-search-btn">
+        <input type="text" placeholder="请输入关键字" id="keyword">
+        <input type="button" value="搜索" class="my-btn">
+    </div>
+    <div class="my-search-history">
+            <a href="#">历史搜索</a>
+            <a href="#" class="mui-icon mui-icon-trash my-delete" id="clearBtn">清空历史</a>
+        </div>
+    <div class="my-view">
+            <ul id="history-box" class="mui-table-view ">
+            </ul>
+        </div>
+</div>
+<script src="./assets/zepto/zepto.min.js"></script>
+<script src="./assets/mui/js/mui.min.js"></script>
+<!--<script src="js/common.js"></script>-->
+<script src="js/search.js"></script>
+<script src="./assets/artTemplate/template-native.js"></script>
 </body>
+<script id="historyTpl" type="text/html">
+    <% for(var i=0;i < result.length; i++){ %>
+    <li class="mui-table-view-cell"><%=result[i] %></li>
+    <% } %>
+</script>
+
 </html>

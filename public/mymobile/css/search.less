@@ -1,0 +1,46 @@
+@search:#006699;
+.my-search{
+  padding-top: 20px;
+  margin: 10px;
+  .my-search-btn{
+    border: 1px solid @search;
+    position: relative;
+    height: 40px;
+    input[type=text]{
+      height: 37px;
+      border: none;
+    }
+    input[type=button]{
+      width: 60px;
+      height: 38px;
+      border-radius: 0;
+      border: 0;
+      position: absolute;
+      background-color: @search;
+      top: 0;
+      right: 0;
+    }
+  }
+  .my-search-history{
+    padding: 10px;
+    height: 50px;
+    a{
+      display: inline-block;
+      color: #8c8c8c;
+      line-height: 40px;
+    }
+    .my-delete{
+      font-size: 17px;
+      float: right;
+    }
+  }
+  .my-view{
+    .my-list{
+      background-color: #EFEFF4;
+      height: 40px;
+      line-height: 40px;
+      padding-left: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+  }
+}
